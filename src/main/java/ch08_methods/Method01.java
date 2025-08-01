@@ -67,7 +67,7 @@ public class Method01 {
         String myName = "";
         int myAge = 0;
         System.out.println("이름을 입력하세요 >>>");
-        myName = scanner.nextLine();                // 사실 이 nextline();이 메서드 입니다. -> 메서드의 결과값을 myName이라는
+        myName = scanner.nextLine();                // 사실 이 nextLine();이 메서드 입니다. -> 메서드의 결과값을 myName이라는
                                                     // 변수에 저장했습니다.
         System.out.println("나이를 입력하세요 >>>");
         myAge = scanner.nextInt();

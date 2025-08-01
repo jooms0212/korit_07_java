@@ -23,7 +23,7 @@ public class Loop07 {
         int row = 0;
         System.out.println("몇 줄의 별을 생성하시겠습니까? >>>");
         row = scanner.nextInt();
-        for (int i = 0; i < row+1; i++) {
+        for (int i = 0; i < row + 1; i++) {
             for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }
