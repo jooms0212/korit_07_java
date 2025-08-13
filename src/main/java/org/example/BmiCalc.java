@@ -9,7 +9,28 @@ public class BmiCalc {
     }
     // call3() 형태로 메서드화 시킬 겁니다
     public void calcBmi(String name, double height, double weight) {
-
+        // method 정의 할 때 argument와 parameter 개념을 혼란스러워하는 경우가 있는데,
+        // 정의 -> 호출이라는 순서라고 생각할 때,
+        // 소괄호 내에 있는 매개변수 목록들은 자료형 + (임의의) 변수명 으로 이루어져
+        // 있기 때문에 '선언'이라고 간주해주면 좋겠습니다.
+//        double mHeight = height * 0.01;
+//        double bmi = weight / (mHeight * mHeight);
+//        String index = "";
+//        if (bmi < 18.5) {
+//            index = "저체중";
+//        } else if (bmi < 23) {
+//            index = "정상";
+//        } else if (bmi < 25) {
+//            index = "과체중";
+//        } else if (bmi < 30) {
+//            index = "1단계 비만";
+//        } else if (bmi < 35) {
+//            index = "2단계 비만";
+//        } else {
+//            index = "3단계 비만";
+//        }
+//        System.out.println(name + "님의 BMI 지수는 " + bmi + "으로 " + index + "입니다.");
+//    }
     }
     // call3() 형태 메서드기는 한데 매개변수가 객체인 경우
     public void calcBmi(org.example.Person person) {
@@ -42,9 +63,10 @@ public class BmiCalc {
         double height = scanner.nextDouble();
         System.out.print("몸무게(kg)를 입력하세요 >>>");
         double weight = scanner.nextDouble();
-        Person person = Person.builder().name(name).height(height).weight(weight).build();
+        Person person4 = Person.builder().name(name).height(height).weight(weight).build();
         BmiCalc bmiCalc = new BmiCalc();
-        bmiCalc.calcBmi(person);
+        bmiCalc.calcBmi(person4);
+
 //        double bmi = weight / (height * height);
 //        String index = "";
 //        if (bmi < 18.5) {

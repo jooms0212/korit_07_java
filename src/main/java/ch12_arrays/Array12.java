@@ -65,7 +65,7 @@ public class Array12 {
             이상의 과정이 overloading이 이루어졌다는 점을 파악할 수 있으면 현재 수준으로는
             만족스럽겠습니다.
             그리고 두 번째 argument로 Comparator.reverseOrder();가 사용되었는데,
-            Comparator.reverseOrder()의 결과값/return값이 sort() 메서드의
+            Comparator.reverseOrder()의 결과값 / return값이 sort() 메서드의
             두 번째 argument로 사용되었다는 점에서 역시 함수형 프로그래밍의 일종이라고
             볼 수 있겠네요
             근데 Comparator.reverseOrder() 메서드를 쓰려면
