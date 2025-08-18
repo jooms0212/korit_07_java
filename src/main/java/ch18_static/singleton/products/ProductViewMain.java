@@ -1,5 +1,7 @@
 package ch18_static.singleton.products;
 
+import ch18_static.Product;
+
 public class ProductViewMain {
     public static void main(String[] args) {
         ProductView.getInstance();
